@@ -19,7 +19,7 @@
          0x19761d9f4 -[UIKeyboardTaskEntry dealloc] + 68
          0x18f4de134 (anonymous namespace)::AutoreleasePoolPage::pop(void*) + 836
     2.测试环境：
-        * iOS 10.3.3
+        * iOS 10.3.3 (iOS11以下都测出问题，包括iOS8,iOS9)
         * 项目中拖入Safe文件夹内的文件（文件使用MethodSwizzle 实现对数组、字典 等系统方法的安全校验）
         * 开启Xcode的Zombie Objects
  
