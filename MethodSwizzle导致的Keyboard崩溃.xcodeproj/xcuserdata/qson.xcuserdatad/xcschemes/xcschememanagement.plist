@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MethodSwizzle导致的Keyboard崩溃.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EC56D0532119397B00FD7B67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC56D06B2119397B00FD7B67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC56D0762119397B00FD7B67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

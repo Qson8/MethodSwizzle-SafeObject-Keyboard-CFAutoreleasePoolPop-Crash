@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC56D0592119397B00FD7B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D0582119397B00FD7B67 /* AppDelegate.m */; };
+		EC56D05C2119397B00FD7B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D05B2119397B00FD7B67 /* ViewController.m */; };
+		EC56D0612119397B00FD7B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC56D0602119397B00FD7B67 /* Assets.xcassets */; };
+		EC56D0642119397B00FD7B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC56D0622119397B00FD7B67 /* LaunchScreen.storyboard */; };
+		EC56D0672119397B00FD7B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D0662119397B00FD7B67 /* main.m */; };
+		EC56D0712119397B00FD7B67 /* MethodSwizzle___Keyboard__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D0702119397B00FD7B67 /* MethodSwizzle___Keyboard__Tests.m */; };
+		EC56D07C2119397C00FD7B67 /* MethodSwizzle___Keyboard__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D07B2119397C00FD7B67 /* MethodSwizzle___Keyboard__UITests.m */; };
+		EC56D09A211939C200FD7B67 /* NSMutableArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D08B211939C200FD7B67 /* NSMutableArray+safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC56D09B211939C200FD7B67 /* NSString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D08C211939C200FD7B67 /* NSString+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC56D09C211939C200FD7B67 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D08F211939C200FD7B67 /* NSMutableDictionary+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC56D09D211939C200FD7B67 /* NSNull+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D091211939C200FD7B67 /* NSNull+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC56D09E211939C200FD7B67 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D094211939C200FD7B67 /* NSObject+Runtime.m */; };
+		EC56D09F211939C200FD7B67 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D096211939C200FD7B67 /* NSDictionary+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC56D0A0211939C200FD7B67 /* NSNumber+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D097211939C200FD7B67 /* NSNumber+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC56D0A1211939C200FD7B67 /* NSArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D099211939C200FD7B67 /* NSArray+safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC56D06D2119397B00FD7B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC56D04C2119397B00FD7B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC56D0532119397B00FD7B67;
+			remoteInfo = "MethodSwizzle导致的Keyboard崩溃";
+		};
+		EC56D0782119397B00FD7B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC56D04C2119397B00FD7B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC56D0532119397B00FD7B67;
+			remoteInfo = "MethodSwizzle导致的Keyboard崩溃";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC56D0542119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MethodSwizzle导致的Keyboard崩溃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC56D0572119397B00FD7B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC56D0582119397B00FD7B67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC56D05A2119397B00FD7B67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC56D05B2119397B00FD7B67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC56D0602119397B00FD7B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC56D0632119397B00FD7B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC56D0652119397B00FD7B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC56D0662119397B00FD7B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC56D06C2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MethodSwizzle导致的Keyboard崩溃Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC56D0702119397B00FD7B67 /* MethodSwizzle___Keyboard__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MethodSwizzle___Keyboard__Tests.m"; sourceTree = "<group>"; };
+		EC56D0722119397B00FD7B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC56D0772119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MethodSwizzle导致的Keyboard崩溃UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC56D07B2119397C00FD7B67 /* MethodSwizzle___Keyboard__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MethodSwizzle___Keyboard__UITests.m"; sourceTree = "<group>"; };
+		EC56D07D2119397C00FD7B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC56D08A211939C200FD7B67 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		EC56D08B211939C200FD7B67 /* NSMutableArray+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+safe.m"; sourceTree = "<group>"; };
+		EC56D08C211939C200FD7B67 /* NSString+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Safe.m"; sourceTree = "<group>"; };
+		EC56D08D211939C200FD7B67 /* NSNumber+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Safe.h"; sourceTree = "<group>"; };
+		EC56D08E211939C200FD7B67 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		EC56D08F211939C200FD7B67 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		EC56D090211939C200FD7B67 /* NSArray+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+safe.h"; sourceTree = "<group>"; };
+		EC56D091211939C200FD7B67 /* NSNull+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Safe.m"; sourceTree = "<group>"; };
+		EC56D092211939C200FD7B67 /* NSString+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Safe.h"; sourceTree = "<group>"; };
+		EC56D093211939C200FD7B67 /* NSMutableArray+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+safe.h"; sourceTree = "<group>"; };
+		EC56D094211939C200FD7B67 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		EC56D095211939C200FD7B67 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		EC56D096211939C200FD7B67 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		EC56D097211939C200FD7B67 /* NSNumber+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Safe.m"; sourceTree = "<group>"; };
+		EC56D098211939C200FD7B67 /* NSNull+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Safe.h"; sourceTree = "<group>"; };
+		EC56D099211939C200FD7B67 /* NSArray+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+safe.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC56D0512119397B00FD7B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC56D0692119397B00FD7B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC56D0742119397B00FD7B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC56D04B2119397B00FD7B67 = {
+			isa = PBXGroup;
+			children = (
+				EC56D0562119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃 */,
+				EC56D06F2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests */,
+				EC56D07A2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests */,
+				EC56D0552119397B00FD7B67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC56D0552119397B00FD7B67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC56D0542119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃.app */,
+				EC56D06C2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests.xctest */,
+				EC56D0772119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC56D0562119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃 */ = {
+			isa = PBXGroup;
+			children = (
+				EC56D089211939C200FD7B67 /* Safe */,
+				EC56D0572119397B00FD7B67 /* AppDelegate.h */,
+				EC56D0582119397B00FD7B67 /* AppDelegate.m */,
+				EC56D05A2119397B00FD7B67 /* ViewController.h */,
+				EC56D05B2119397B00FD7B67 /* ViewController.m */,
+				EC56D0602119397B00FD7B67 /* Assets.xcassets */,
+				EC56D0622119397B00FD7B67 /* LaunchScreen.storyboard */,
+				EC56D0652119397B00FD7B67 /* Info.plist */,
+				EC56D0662119397B00FD7B67 /* main.m */,
+			);
+			path = "MethodSwizzle导致的Keyboard崩溃";
+			sourceTree = "<group>";
+		};
+		EC56D06F2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC56D0702119397B00FD7B67 /* MethodSwizzle___Keyboard__Tests.m */,
+				EC56D0722119397B00FD7B67 /* Info.plist */,
+			);
+			path = "MethodSwizzle导致的Keyboard崩溃Tests";
+			sourceTree = "<group>";
+		};
+		EC56D07A2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC56D07B2119397C00FD7B67 /* MethodSwizzle___Keyboard__UITests.m */,
+				EC56D07D2119397C00FD7B67 /* Info.plist */,
+			);
+			path = "MethodSwizzle导致的Keyboard崩溃UITests";
+			sourceTree = "<group>";
+		};
+		EC56D089211939C200FD7B67 /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				EC56D08A211939C200FD7B67 /* NSObject+Runtime.h */,
+				EC56D08B211939C200FD7B67 /* NSMutableArray+safe.m */,
+				EC56D08C211939C200FD7B67 /* NSString+Safe.m */,
+				EC56D08D211939C200FD7B67 /* NSNumber+Safe.h */,
+				EC56D08E211939C200FD7B67 /* NSDictionary+Safe.h */,
+				EC56D08F211939C200FD7B67 /* NSMutableDictionary+Safe.m */,
+				EC56D090211939C200FD7B67 /* NSArray+safe.h */,
+				EC56D091211939C200FD7B67 /* NSNull+Safe.m */,
+				EC56D092211939C200FD7B67 /* NSString+Safe.h */,
+				EC56D093211939C200FD7B67 /* NSMutableArray+safe.h */,
+				EC56D094211939C200FD7B67 /* NSObject+Runtime.m */,
+				EC56D095211939C200FD7B67 /* NSMutableDictionary+Safe.h */,
+				EC56D096211939C200FD7B67 /* NSDictionary+Safe.m */,
+				EC56D097211939C200FD7B67 /* NSNumber+Safe.m */,
+				EC56D098211939C200FD7B67 /* NSNull+Safe.h */,
+				EC56D099211939C200FD7B67 /* NSArray+safe.m */,
+			);
+			path = Safe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC56D0532119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC56D0802119397C00FD7B67 /* Build configuration list for PBXNativeTarget "MethodSwizzle导致的Keyboard崩溃" */;
+			buildPhases = (
+				EC56D0502119397B00FD7B67 /* Sources */,
+				EC56D0512119397B00FD7B67 /* Frameworks */,
+				EC56D0522119397B00FD7B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MethodSwizzle导致的Keyboard崩溃";
+			productName = "MethodSwizzle导致的Keyboard崩溃";
+			productReference = EC56D0542119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC56D06B2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC56D0832119397C00FD7B67 /* Build configuration list for PBXNativeTarget "MethodSwizzle导致的Keyboard崩溃Tests" */;
+			buildPhases = (
+				EC56D0682119397B00FD7B67 /* Sources */,
+				EC56D0692119397B00FD7B67 /* Frameworks */,
+				EC56D06A2119397B00FD7B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC56D06E2119397B00FD7B67 /* PBXTargetDependency */,
+			);
+			name = "MethodSwizzle导致的Keyboard崩溃Tests";
+			productName = "MethodSwizzle导致的Keyboard崩溃Tests";
+			productReference = EC56D06C2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC56D0762119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC56D0862119397C00FD7B67 /* Build configuration list for PBXNativeTarget "MethodSwizzle导致的Keyboard崩溃UITests" */;
+			buildPhases = (
+				EC56D0732119397B00FD7B67 /* Sources */,
+				EC56D0742119397B00FD7B67 /* Frameworks */,
+				EC56D0752119397B00FD7B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC56D0792119397B00FD7B67 /* PBXTargetDependency */,
+			);
+			name = "MethodSwizzle导致的Keyboard崩溃UITests";
+			productName = "MethodSwizzle导致的Keyboard崩溃UITests";
+			productReference = EC56D0772119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC56D04C2119397B00FD7B67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Qson;
+				TargetAttributes = {
+					EC56D0532119397B00FD7B67 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EC56D06B2119397B00FD7B67 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC56D0532119397B00FD7B67;
+					};
+					EC56D0762119397B00FD7B67 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC56D0532119397B00FD7B67;
+					};
+				};
+			};
+			buildConfigurationList = EC56D04F2119397B00FD7B67 /* Build configuration list for PBXProject "MethodSwizzle导致的Keyboard崩溃" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC56D04B2119397B00FD7B67;
+			productRefGroup = EC56D0552119397B00FD7B67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC56D0532119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃 */,
+				EC56D06B2119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃Tests */,
+				EC56D0762119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC56D0522119397B00FD7B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC56D0642119397B00FD7B67 /* LaunchScreen.storyboard in Resources */,
+				EC56D0612119397B00FD7B67 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC56D06A2119397B00FD7B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC56D0752119397B00FD7B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC56D0502119397B00FD7B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC56D0A0211939C200FD7B67 /* NSNumber+Safe.m in Sources */,
+				EC56D0A1211939C200FD7B67 /* NSArray+safe.m in Sources */,
+				EC56D09D211939C200FD7B67 /* NSNull+Safe.m in Sources */,
+				EC56D09C211939C200FD7B67 /* NSMutableDictionary+Safe.m in Sources */,
+				EC56D09A211939C200FD7B67 /* NSMutableArray+safe.m in Sources */,
+				EC56D05C2119397B00FD7B67 /* ViewController.m in Sources */,
+				EC56D09E211939C200FD7B67 /* NSObject+Runtime.m in Sources */,
+				EC56D09F211939C200FD7B67 /* NSDictionary+Safe.m in Sources */,
+				EC56D09B211939C200FD7B67 /* NSString+Safe.m in Sources */,
+				EC56D0672119397B00FD7B67 /* main.m in Sources */,
+				EC56D0592119397B00FD7B67 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC56D0682119397B00FD7B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC56D0712119397B00FD7B67 /* MethodSwizzle___Keyboard__Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC56D0732119397B00FD7B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC56D07C2119397C00FD7B67 /* MethodSwizzle___Keyboard__UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC56D06E2119397B00FD7B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC56D0532119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃 */;
+			targetProxy = EC56D06D2119397B00FD7B67 /* PBXContainerItemProxy */;
+		};
+		EC56D0792119397B00FD7B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC56D0532119397B00FD7B67 /* MethodSwizzle导致的Keyboard崩溃 */;
+			targetProxy = EC56D0782119397B00FD7B67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC56D0622119397B00FD7B67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC56D0632119397B00FD7B67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC56D07E2119397C00FD7B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC56D07F2119397C00FD7B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC56D0812119397C00FD7B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT726ND66X;
+				INFOPLIST_FILE = "MethodSwizzle导致的Keyboard崩溃/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Qson.MethodSwizzle---Keyboard--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC56D0822119397C00FD7B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT726ND66X;
+				INFOPLIST_FILE = "MethodSwizzle导致的Keyboard崩溃/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Qson.MethodSwizzle---Keyboard--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC56D0842119397C00FD7B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT726ND66X;
+				INFOPLIST_FILE = "MethodSwizzle导致的Keyboard崩溃Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Qson.MethodSwizzle---Keyboard--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MethodSwizzle导致的Keyboard崩溃.app/MethodSwizzle导致的Keyboard崩溃";
+			};
+			name = Debug;
+		};
+		EC56D0852119397C00FD7B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT726ND66X;
+				INFOPLIST_FILE = "MethodSwizzle导致的Keyboard崩溃Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Qson.MethodSwizzle---Keyboard--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MethodSwizzle导致的Keyboard崩溃.app/MethodSwizzle导致的Keyboard崩溃";
+			};
+			name = Release;
+		};
+		EC56D0872119397C00FD7B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT726ND66X;
+				INFOPLIST_FILE = "MethodSwizzle导致的Keyboard崩溃UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Qson.MethodSwizzle---Keyboard--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MethodSwizzle导致的Keyboard崩溃";
+			};
+			name = Debug;
+		};
+		EC56D0882119397C00FD7B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT726ND66X;
+				INFOPLIST_FILE = "MethodSwizzle导致的Keyboard崩溃UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Qson.MethodSwizzle---Keyboard--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MethodSwizzle导致的Keyboard崩溃";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC56D04F2119397B00FD7B67 /* Build configuration list for PBXProject "MethodSwizzle导致的Keyboard崩溃" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC56D07E2119397C00FD7B67 /* Debug */,
+				EC56D07F2119397C00FD7B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC56D0802119397C00FD7B67 /* Build configuration list for PBXNativeTarget "MethodSwizzle导致的Keyboard崩溃" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC56D0812119397C00FD7B67 /* Debug */,
+				EC56D0822119397C00FD7B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC56D0832119397C00FD7B67 /* Build configuration list for PBXNativeTarget "MethodSwizzle导致的Keyboard崩溃Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC56D0842119397C00FD7B67 /* Debug */,
+				EC56D0852119397C00FD7B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC56D0862119397C00FD7B67 /* Build configuration list for PBXNativeTarget "MethodSwizzle导致的Keyboard崩溃UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC56D0872119397C00FD7B67 /* Debug */,
+				EC56D0882119397C00FD7B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC56D04C2119397B00FD7B67 /* Project object */;
+}
