@@ -5,10 +5,10 @@
 ## 测试用例：
 
     1.问题 ：  
-        #Xcode崩溃代码：
+        Xcode崩溃代码：
         [UIKeyboardLayoutStar release]: message sent to deallocated instance 0x101055800
  
-        #崩溃日志:
+        崩溃日志:
          Crashed: com.apple.main-thread
         0  libobjc.A.dylib                0x187b917f4 objc_object::release() + 8
         1  libsystem_blocks.dylib         0x18801fa68 _Block_release + 160
@@ -37,4 +37,18 @@
     4. 处理
         Safe文件设置为挂钩NSMutableArray方法编译器标志的位置 -fno-objc-arc
  
+ 
+
+## 惊喜发现
+除了能导致CFAutoreleasePoolPop崩溃问题，我们发散思维想：是否也会影响键盘弹出时输入法。
+
+前因：
+    为何会想到它能影响键盘输入法?
+解释：
+    当然是遇到坑，而且是大坑，发现了几个月，但一直没找到解决办法
+什么坑：
+    个别用户手机（我们遇到的基本是iphoneX）使用我们App点击任何输入框，弹出的键盘无法输入中文，也无法切换中文，切换的小地球不见，而是一个表情按钮。但其他App正常。一开始收到这个bug，无从下手，基本想不到自己项目中哪里的问题，因为键盘是系统的，非第三方，我们代码是没办法控制系统键盘。几经周折，最后不了了之。
+
+这次处理CFAutoreleasePoolPop这个崩溃问题，给问题机测试，键盘切换中文正常，欧耶！！终于处理了一个疑难杂症，一箭双雕！
+    
 
